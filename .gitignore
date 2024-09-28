@@ -1,0 +1,10 @@
+# Build Folders (you can edit these to match your build output folder)
+[Bb]in/
+[Oo]bj/
+[Pp]ublish/
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

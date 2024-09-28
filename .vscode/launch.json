@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+      "name": ".NET Core Launch (Debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build BruteForce Debug",
+      "program": "${workspaceFolder}/src/BruteForce/bin/Any CPU/Debug/net8/BruteForce.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": ".NET Core Launch (Release)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build BruteForce Release",
+      "program": "${workspaceFolder}/src/BruteForce/bin/Any CPU/Release/net8/BruteForce.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    }
+  ]
+}
