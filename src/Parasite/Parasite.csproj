@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8</TargetFramework>
-    <RootNamespace>MagicLiquid.BruteForce</RootNamespace>
+    <RootNamespace>MagicLiquid.Parasite</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

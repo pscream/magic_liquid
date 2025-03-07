@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 
-namespace MagicLiquid.BruteForce
+using MagicLiquid.Common.Solutions;
+
+namespace MagicLiquid.Common.Interfaces
 {
     public interface ITaskResolver
     {

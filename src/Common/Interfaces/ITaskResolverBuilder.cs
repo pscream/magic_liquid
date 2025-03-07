@@ -1,6 +1,4 @@
-using MagicLiquid.BruteForce.Strategies;
-
-namespace MagicLiquid.BruteForce
+namespace MagicLiquid.Common.Interfaces
 {
 
     public interface ITaskResolverBuilder

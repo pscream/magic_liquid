@@ -2,10 +2,9 @@ using System;
 
 using MagicLiquid.Common.Solutions;
 using MagicLiquid.Common.Builders;
-using MagicLiquid.BruteForce.Strategies;
-using System.Linq;
+using MagicLiquid.Parasite.Strategies;
 
-namespace MagicLiquid.BruteForce
+namespace MagicLiquid.Parasite
 {
     public class Program
     {
@@ -35,7 +34,7 @@ namespace MagicLiquid.BruteForce
                 builder.AddVialVolume(availableVials[i]);
 
             var taskResolver = builder.AddRequiredVolume(requiredVolume)
-                                .UseStrategy(new CartesianProduct())
+                                .UseStrategy(new DeepBottom())
                                 .Build();
 
             var solutions = taskResolver.Resolve();

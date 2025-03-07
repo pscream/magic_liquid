@@ -137,3 +137,41 @@ Final state
 | X | X | X | X | X |
 | X | X | X | X | X |
 |6|5|4|3|2|
+
+- __Parasite__ (N-ary Tree)
+The core of this algorithm is to build _N_ number of trees with each node having _N_ children of all different volume vials. Each tree starts with the vial of one of the volumes. Each branch of the tree ends when the sum of all nodes in the branch fills up the requested volume. 
+*Steps:*
+1. Iterate through all volumes and start a tree for each of them.
+2. For each iteration in __Step 1__ recursively build the child nodes and their children for all different volume vials.
+3. Continue __Step 2__ until the sum of all nodes in a branch to the maximum depth equals or more than the requested volume. Stop extending such branches.
+4. When all branches of the tree are built (__Step 2__ and __Step 3__), remove repeating combinations that consist of the same count of vials of the same volume. Note that the sequence of those nodes might vary but the total number of vials of the same volume stays the same.
+5. Perform an analysis of all stored combinations and find the most efficient one.
+
+If the required volume is 35 and there are 3 types of vials with volumes 10, 20, and 50 then the tree might be following. There, volumes are depicted in numbers, and sums are depicted in numbers in parentheses. The branches are stopped when the sum exceeds 35.
+
+                                       10
+                                /       |      \
+                               /        |       \
+                              /         |        \
+                             /          |         \
+                            /           |          \  
+                           /            |           \
+                          /             |            \
+                         /              |             \
+                        /               |              \
+                       /                |               \
+                      /                 |                \
+                     /                  |                 \
+                    /                   |                  \
+                   /                    |                   \
+                  /                     |                    \
+                 /                      |                     \
+                /                       |                      \
+              10(20)                  20(30)                   50(60)
+           /    |    \              /    |    \                / | \ 
+          /     |     \            /     |     \              +  +  + 
+         /      |      \          /      |      \
+        10(30)  20(40) 50(70)    10(40)  20(50)  50(80)
+       / | \   / | \   / | \    / | \   / | \   / | \
+     10  +  + +  +  + +  +  +  +  +  + +  +  + +  +  +
+    (40)

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MagicLiquid.BruteForce.Strategies
+namespace MagicLiquid.Common.Interfaces
 {
 
     public interface ISolutionStrategy

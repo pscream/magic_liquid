@@ -1,9 +1,10 @@
 using System.Linq;
 using System.Collections.Generic;
 
-using MagicLiquid.BruteForce.Strategies;
+using MagicLiquid.Common.Interfaces;
+using MagicLiquid.Common.Solutions;
 
-namespace MagicLiquid.BruteForce
+namespace MagicLiquid.Common.Builders
 {
 
     public class TaskResolverBuilder : ITaskResolverBuilder

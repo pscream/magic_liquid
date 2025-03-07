@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using MagicLiquid.Common.Interfaces;
+
 namespace MagicLiquid.BruteForce.Strategies
 {
 
